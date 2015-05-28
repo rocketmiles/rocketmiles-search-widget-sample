@@ -2,5 +2,23 @@
   <head>
   </head>
   <body>
+    <script type="text/javascript">
+      var _rmp = {
+        region: "LAX", // Replace with the airport code
+        checkIn: "07/13/2015", // Replace with the departing date in mm/dd/yyyy format
+        checkOut: "07/16/2015", // Replace with the returning date in mm/dd/yyyy format
+        guests: 2, // Replace with the number of travelers
+        currency: "USD", // Replace with the currency code
+        program: "aeroplan"
+      };
+    
+      (function() {
+        var rmw = document.createElement('script'); rmw.type = 'text/javascript';
+        rmw.async = true; rmw.id = 'rm-widget-builder';
+        rmw.setAttribute('data-iframe', 'https://www.rocketmiles.com/search-widget/iframe/1.0')
+        rmw.src = 'https://d3si51sdedya5l.cloudfront.net/assets/rm3/widgets/search/1.0/build.min.js'
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(rmw, s);
+      })();
+    </script>
   </body>
 </html>
